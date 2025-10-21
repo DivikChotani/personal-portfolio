@@ -3,71 +3,73 @@ import { ExternalLink, LucideGithub } from 'lucide-react';
 export default function Experience() {
     const projects = [
         {
-            title: "E-Commerce Platform",
-            description: "A full-stack online shopping platform with payment integration and real-time inventory management.",
-            tech: ["React", "Node.js", "MongoDB", "Stripe API"],
-            link: "#",
-            github: "#",
+            title: "Co-op Minesweepe",
+            description: "A full-stack online multiplayer version of minesweeper that you can play with your friends",
+            tech: ["Golang", "AWS", "PostgreSQL"],
+            link: "https://coopminesweeper.netlify.app/game",
             featured: true
         },
         {
-            title: "Task Management App",
-            description: "Collaborative project management tool with real-time updates and team communication features.",
+            title: "Amazon Listing Grader",
+            description: "An AI-powered tool to see how well you are advertising your product on amazon.com.",
             tech: ["React", "Firebase", "Tailwind", "Socket.io"],
-            link: "#",
-            github: "#",
+            link: "https://amazon-listing-grader.pixii.ai/",
             featured: true
         },
         {
-            title: "Weather Dashboard",
-            description: "Real-time weather monitoring dashboard with forecasts and interactive maps.",
-            tech: ["React", "API Integration", "Charts.js", "Mapbox"],
+            title: "Data Journalist",
+            description: "Wrote articles on whatever topic I found interesting after digging deep into it.",
+            tech: ["Html Scraping", "Requests", "Beatiful Soup"],
+            link: "https://www.bruinsportsanalytics.com/post/leverkusen-success",
+            featured: true
+        },
+        {
+            title: "Portfolio Website (This Page!)",
+            description: "Personal portfolio showcasing projects and skills with modern design.",
+            tech: ["React", "Vite"],
             link: "#",
-            github: "#",
             featured: false
         },
         {
-            title: "Portfolio Website",
-            description: "Personal portfolio showcasing projects and skills with modern design.",
-            tech: ["React", "Vite", "CSS3", "React Router"],
+            title: "Adversarial Models Research",
+            description: "A research project analyzing how we can spoof CNNs and other ML recognition models.",
+            tech: ["Python", "Pytorch"],
             link: "#",
-            github: "#",
             featured: false
         }
     ];
 
     const workExperience = [
         {
-            company: "Tech Solutions Inc.",
-            position: "Senior Frontend Developer",
-            period: "2022 - Present",
-            description: "Lead frontend development for enterprise applications, mentoring junior developers and implementing modern React patterns.",
+            company: "UCLA Programmable Software Systems Lab",
+            position: "Research Assistant",
+            period: "March 2025 - Present",
+            description: "Focused on parallel computing and compiler optimization to accelerate real-world software performance.",
             achievements: [
-                "Improved application performance by 40% through code optimization",
-                "Led migration from legacy jQuery to React",
-                "Mentored 3 junior developers"
+                "Built eBPF observability tool to track over 1M concurrent event.",
+                "Contributed to the pash project that cut runtimes down by up to 83% for shell scripts.",
+                "Added parrellization rules for pre existing and custom shell commands."
             ]
         },
         {
-            company: "Digital Agency Co.",
-            position: "Full Stack Developer",
-            period: "2020 - 2022",
-            description: "Developed custom web applications for clients across various industries using modern web technologies.",
+            company: "Validia",
+            position: "SWE Intern",
+            period: "Sept. 2024 - Jan. 2025",
+            description: "Developed AI-powered security and voice verification tools for real-time identity protection.",
             achievements: [
-                "Built 15+ client websites and web applications",
-                "Implemented automated testing reducing bugs by 60%",
-                "Collaborated with design team on UX improvements"
+                "Built facial verification Chrome extension.",
+                "Developed FastAPI backend detecting deepfake voices with 72% accuracy.",
+                "Improved audio deepfake detection by 20% using PyTorch and Python."
             ]
         },
         {
-            company: "Startup Ventures",
-            position: "Junior Developer",
-            period: "2019 - 2020",
+            company: "Pixii",
+            position: "SWE Intern",
+            period: "Jan 2025 - Sept. 2025",
             description: "Started career building features for a fast-growing SaaS platform, learning modern development practices.",
             achievements: [
-                "Contributed to 50+ feature releases",
-                "Learned React, Node.js, and cloud deployment",
-                "Participated in agile development processes"
+                "Built Slackbot generating 30 days of ad content.",
+                "Built analytics dashboard boosting user return rate by 16%.",
             ]
         }
     ];
@@ -92,9 +94,7 @@ export default function Experience() {
                                 <div className="project-header">
                                     <h3 className="project-title">{project.title}</h3>
                                     <div className="project-links">
-                                        <a href={project.github} className="project-icon-link" title="View Code">
-                                            <LucideGithub size={20} />
-                                        </a>
+                                     
                                         <a href={project.link} className="project-icon-link" title="Live Demo">
                                             <ExternalLink size={20} />
                                         </a>
@@ -113,7 +113,8 @@ export default function Experience() {
                     </div>
 
                     <div className="section-header">
-                        <h3 className="section-subtitle">Other Projects</h3>
+                        <h3 className="section-subtitle">
+                            Other Projects</h3>
                     </div>
 
                     <div className="projects-list">

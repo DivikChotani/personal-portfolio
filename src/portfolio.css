@@ -17,7 +17,7 @@ body {
 
 .portfolio-container {
   min-height: 100vh;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 25%, #0f4f5c 50%, #1e293b 75%, #0f172a 100%);
+  background: #000000;
 }
 
 /* Multi-page Layout Styles */
@@ -34,10 +34,10 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  background-color: rgba(15, 23, 42, 0.95);
+  background-color: rgba(0, 0, 0, 0.95);
   backdrop-filter: blur(12px);
   z-index: 50;
-  border-bottom: 1px solid rgba(6, 182, 212, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   transform: translateZ(0);
   will-change: transform;
 }
@@ -63,10 +63,7 @@ body {
 .portfolio-logo {
   font-size: 1.5rem;
   font-weight: bold;
-  background: linear-gradient(to right, #06b6d4, #67e8f9);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -81,25 +78,25 @@ body {
 }
 
 .nav-link {
-  color: #d1d5db;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .nav-link:hover {
-  color: #06b6d4;
+  color: #888888;
 }
 
 .nav-link.active,
 .mobile-nav-link.active {
-  color: #06b6d4;
+  color: #888888;
   font-weight: 600;
 }
 
 .mobile-menu-btn {
   background: none;
   border: none;
-  color: #d1d5db;
+  color: #ffffff;
   cursor: pointer;
   display: block;
 }
@@ -111,12 +108,12 @@ body {
 .mobile-nav-link {
   display: block;
   padding: 0.5rem 0;
-  color: #d1d5db;
+  color: #ffffff;
   text-decoration: none;
 }
 
 .mobile-nav-link:hover {
-  color: #06b6d4;
+  color: #888888;
 }
 
 @media (min-width: 768px) {
@@ -159,11 +156,7 @@ body {
   font-size: 3rem;
   font-weight: bold;
   margin-bottom: 1.5rem;
-  background: linear-gradient(to right, #06b6d4, #67e8f9, #06b6d4);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  color: #ffffff;
 }
 
 @media (min-width: 640px) {
@@ -172,18 +165,9 @@ body {
   }
 }
 
-@keyframes pulse {
-  0%, 100% {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0.8;
-  }
-}
-
 .hero-subtitle {
   font-size: 1.25rem;
-  color: #d1d5db;
+  color: #cccccc;
   margin-bottom: 2rem;
 }
 
@@ -194,7 +178,7 @@ body {
 }
 
 .hero-description {
-  color: #9ca3af;
+  color: #aaaaaa;
   max-width: 42rem;
   margin: 0 auto 3rem;
 }
@@ -207,24 +191,23 @@ body {
 }
 
 .btn-primary {
-  background-color: #0891b2;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
   text-decoration: none;
   transition: all 0.2s;
-  box-shadow: 0 4px 14px 0 rgba(6, 182, 212, 0.39);
+  font-weight: 600;
 }
 
 .btn-primary:hover {
-  background-color: #0e7490;
+  background-color: #cccccc;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgba(6, 182, 212, 0.5);
 }
 
 .btn-secondary {
-  border: 1px solid #06b6d4;
-  color: #06b6d4;
+  border: 2px solid #ffffff;
+  color: #ffffff;
   padding: 0.75rem 2rem;
   border-radius: 0.5rem;
   text-decoration: none;
@@ -232,7 +215,8 @@ body {
 }
 
 .btn-secondary:hover {
-  background-color: rgba(6, 182, 212, 0.1);
+  background-color: #ffffff;
+  color: #000000;
   transform: translateY(-2px);
 }
 
@@ -241,17 +225,14 @@ body {
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 2rem;
-  text-align: center;
-  background: linear-gradient(to right, #06b6d4, #67e8f9);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  text-align: left;
+  color: #ffffff;
 }
 
 /* About Section */
 .about-section {
   padding: 2rem;
-  background-color: rgba(15, 23, 42, 0.5);
+  background-color: #000000;
   min-height: calc(100vh - 4rem);
   display: flex;
   flex-direction: column;
@@ -268,11 +249,11 @@ body {
   font-weight: bold;
   margin-bottom: 2rem;
   text-align: center;
-  color: #06b6d4;
+  color: #ffffff;
 }
 
 .about-text {
-  color: #d1d5db;
+  color: #cccccc;
   font-size: 1.125rem;
   line-height: 1.75;
   margin-bottom: 1.5rem;
@@ -318,13 +299,13 @@ body {
 .placeholder-image {
   width: 200px;
   height: 200px;
-  background-color: rgba(30, 41, 59, 0.7);
+  background-color: #1a1a1a;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #9ca3af;
-  border: 2px solid rgba(6, 182, 212, 0.4);
+  color: #888888;
+  border: 2px solid #ffffff;
 }
 
 .interests-section {
@@ -347,25 +328,25 @@ body {
 .interest-item {
   text-align: center;
   padding: 1.5rem;
-  background-color: rgba(30, 41, 59, 0.5);
+  background-color: #1a1a1a;
   border-radius: 0.75rem;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid #333333;
   transition: all 0.3s;
 }
 
 .interest-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px -3px rgba(6, 182, 212, 0.2);
+  border-color: #ffffff;
 }
 
 .interest-item h3 {
-  color: #67e8f9;
+  color: #ffffff;
   margin-bottom: 0.75rem;
   font-size: 1.125rem;
 }
 
 .interest-item p {
-  color: #9ca3af;
+  color: #aaaaaa;
 }
 
 /* Projects Section */
@@ -398,30 +379,28 @@ body {
 }
 
 .project-card {
-  background-color: rgba(30, 41, 59, 0.7);
+  background-color: #1a1a1a;
   backdrop-filter: blur(8px);
   border-radius: 0.75rem;
   padding: 1.5rem;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid #333333;
   transition: all 0.3s;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
 
 .project-card:hover {
-  border-color: rgba(6, 182, 212, 0.6);
+  border-color: #ffffff;
   transform: translateY(-4px);
-  box-shadow: 0 10px 25px -3px rgba(6, 182, 212, 0.2);
 }
 
 .project-title {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #67e8f9;
+  color: #ffffff;
   margin-bottom: 0.75rem;
 }
 
 .project-description {
-  color: #9ca3af;
+  color: #aaaaaa;
   margin-bottom: 1rem;
 }
 
@@ -433,12 +412,12 @@ body {
 }
 
 .tech-tag {
-  background-color: rgba(6, 182, 212, 0.2);
-  color: #67e8f9;
+  background-color: #000000;
+  color: #ffffff;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
   font-size: 0.875rem;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid #ffffff;
 }
 
 .tech-tag.small {
@@ -449,13 +428,13 @@ body {
 .project-link {
   display: inline-flex;
   align-items: center;
-  color: #06b6d4;
+  color: #ffffff;
   text-decoration: none;
   transition: color 0.2s;
 }
 
 .project-link:hover {
-  color: #67e8f9;
+  color: #888888;
 }
 
 .link-icon {
@@ -470,18 +449,19 @@ body {
 
 .section-subtitle {
   font-size: 1.5rem;
-  color: #67e8f9;
+  color: #ffffff;
   margin-bottom: 1rem;
+  padding-top: 30px;
 }
 
 .section-description {
-  color: #9ca3af;
+  color: #aaaaaa;
   font-size: 1.125rem;
 }
 
 .project-card.featured {
-  border-color: rgba(6, 182, 212, 0.5);
-  background-color: rgba(30, 41, 59, 0.8);
+  border-color: #ffffff;
+  background-color: #1a1a1a;
 }
 
 .project-header {
@@ -497,12 +477,12 @@ body {
 }
 
 .project-icon-link {
-  color: #9ca3af;
+  color: #ffffff;
   transition: color 0.2s;
 }
 
 .project-icon-link:hover {
-  color: #06b6d4;
+  color: #888888;
 }
 
 .projects-list {
@@ -512,16 +492,16 @@ body {
 }
 
 .project-item {
-  background-color: rgba(30, 41, 59, 0.5);
+  background-color: #1a1a1a;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid #333333;
   transition: all 0.3s;
 }
 
 .project-item:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px -3px rgba(6, 182, 212, 0.2);
+  border-color: #ffffff;
 }
 
 .project-item-header {
@@ -532,20 +512,20 @@ body {
 }
 
 .project-item-title {
-  color: #67e8f9;
+  color: #ffffff;
   font-size: 1.125rem;
   font-weight: 600;
 }
 
 .project-item-description {
-  color: #9ca3af;
+  color: #aaaaaa;
   margin-bottom: 1rem;
 }
 
 /* Work Experience Timeline */
 .experience-section {
   padding: 2rem;
-  background-color: rgba(15, 23, 42, 0.5);
+  background-color: #000000;
   min-height: calc(50vh - 2rem);
 }
 
@@ -561,7 +541,7 @@ body {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: linear-gradient(to bottom, #06b6d4, #67e8f9);
+  background: #ffffff;
 }
 
 .timeline-item {
@@ -575,22 +555,22 @@ body {
   top: 0.5rem;
   width: 1rem;
   height: 1rem;
-  background-color: #06b6d4;
+  background-color: #ffffff;
   border-radius: 50%;
-  border: 3px solid #0f172a;
+  border: 3px solid #000000;
 }
 
 .timeline-content {
-  background-color: rgba(30, 41, 59, 0.7);
+  background-color: #1a1a1a;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid #333333;
   transition: all 0.3s;
 }
 
 .timeline-content:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px -3px rgba(6, 182, 212, 0.2);
+  border-color: #ffffff;
 }
 
 .job-header {
@@ -603,28 +583,27 @@ body {
 }
 
 .job-title {
-  color: #67e8f9;
+  color: #ffffff;
   font-size: 1.25rem;
   font-weight: 600;
 }
 
 .job-period {
-  color: #9ca3af;
+  color: #000000;
   font-size: 0.875rem;
-  background-color: rgba(6, 182, 212, 0.2);
+  background-color: #ffffff;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
 .company-name {
-  color: #06b6d4;
+  color: #cccccc;
   font-size: 1rem;
   margin-bottom: 0.75rem;
 }
 
 .job-description {
-  color: #d1d5db;
+  color: #cccccc;
   margin-bottom: 1rem;
 }
 
@@ -636,14 +615,14 @@ body {
 }
 
 .achievement-item {
-  color: #9ca3af;
+  color: #aaaaaa;
   display: flex;
   align-items: flex-start;
 }
 
 .achievement-item::before {
   content: '▸';
-  color: #06b6d4;
+  color: #ffffff;
   margin-right: 0.5rem;
   margin-top: 0.125rem;
 }
@@ -651,7 +630,7 @@ body {
 /* Skills Section */
 .skills-section {
   padding: 2rem;
-  background-color: rgba(15, 23, 42, 0.5);
+  background-color: #000000;
   min-height: calc(50vh - 2rem);
 }
 
@@ -673,22 +652,22 @@ body {
 }
 
 .skill-card {
-  background-color: rgba(30, 41, 59, 0.7);
+  background-color: #1a1a1a;
   border-radius: 0.75rem;
   padding: 1.5rem;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid #333333;
   transition: all 0.3s;
 }
 
 .skill-card:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px -3px rgba(6, 182, 212, 0.2);
+  border-color: #ffffff;
 }
 
 .skill-category {
   font-size: 1.25rem;
   font-weight: bold;
-  color: #67e8f9;
+  color: #ffffff;
   margin-bottom: 1rem;
 }
 
@@ -700,7 +679,7 @@ body {
 }
 
 .skill-item {
-  color: #d1d5db;
+  color: #cccccc;
   display: flex;
   align-items: center;
 }
@@ -708,7 +687,7 @@ body {
 .skill-bullet {
   width: 0.5rem;
   height: 0.5rem;
-  background-color: #06b6d4;
+  background-color: #ffffff;
   border-radius: 9999px;
   margin-right: 0.75rem;
 }
@@ -716,7 +695,7 @@ body {
 /* Resume page styles */
 .resume-header {
   padding: 2rem;
-  background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(103, 232, 249, 0.1));
+  background: #000000;
   min-height: calc(40vh - 2rem);
 }
 
@@ -733,38 +712,38 @@ body {
 .resume-name {
   font-size: 2.5rem;
   font-weight: bold;
-  color: #06b6d4;
+  color: #ffffff;
   margin-bottom: 0.5rem;
 }
 
 .resume-title {
   font-size: 1.5rem;
-  color: #d1d5db;
+  color: #cccccc;
   margin-bottom: 1.5rem;
 }
 
 .download-section {
   margin-bottom: 2rem;
+  padding-top: 50px;
 }
 
 .download-btn {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: #0891b2;
-  color: white;
+  background-color: #ffffff;
+  color: #000000;
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
   transition: all 0.2s;
-  box-shadow: 0 4px 14px 0 rgba(6, 182, 212, 0.39);
+  font-weight: 600;
 }
 
 .download-btn:hover {
-  background-color: #0e7490;
+  background-color: #cccccc;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px 0 rgba(6, 182, 212, 0.5);
 }
 
 .contact-info {
@@ -789,17 +768,17 @@ body {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: #9ca3af;
+  color: #aaaaaa;
   font-size: 0.875rem;
 }
 
 .contact-item svg {
-  color: #06b6d4;
+  color: #ffffff;
 }
 
 .resume-section {
   padding: 3rem 2rem;
-  border-bottom: 1px solid rgba(6, 182, 212, 0.2);
+  border-bottom: 1px solid #333333;
   min-height: 30vh;
 }
 
@@ -810,14 +789,14 @@ body {
 .resume-section-title {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #06b6d4;
+  color: #ffffff;
   margin-bottom: 1.5rem;
-  border-bottom: 2px solid rgba(6, 182, 212, 0.4);
+  border-bottom: 2px solid #ffffff;
   padding-bottom: 0.5rem;
 }
 
 .summary-text {
-  color: #d1d5db;
+  color: #cccccc;
   line-height: 1.6;
   font-size: 1rem;
 }
@@ -835,21 +814,21 @@ body {
 }
 
 .skill-category-resume {
-  background-color: rgba(30, 41, 59, 0.5);
+  background-color: #1a1a1a;
   padding: 1rem;
   border-radius: 0.75rem;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid #333333;
 }
 
 .skill-category-title {
-  color: #67e8f9;
+  color: #ffffff;
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 0.5rem;
 }
 
 .skill-items {
-  color: #9ca3af;
+  color: #aaaaaa;
   font-size: 0.875rem;
   line-height: 1.4;
 }
@@ -857,7 +836,7 @@ body {
 .job-entry {
   margin-bottom: 2rem;
   padding-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(6, 182, 212, 0.2);
+  border-bottom: 1px solid #333333;
 }
 
 .job-entry:last-child {
@@ -875,23 +854,22 @@ body {
 }
 
 .job-title-resume {
-  color: #67e8f9;
+  color: #ffffff;
   font-size: 1.125rem;
   font-weight: 600;
 }
 
 .company-resume {
-  color: #06b6d4;
+  color: #cccccc;
   font-size: 1rem;
 }
 
 .job-period-resume {
-  color: #9ca3af;
+  color: #000000;
   font-size: 0.875rem;
-  background-color: rgba(6, 182, 212, 0.2);
+  background-color: #ffffff;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
 .job-responsibilities {
@@ -902,7 +880,7 @@ body {
 }
 
 .job-responsibilities li {
-  color: #9ca3af;
+  color: #aaaaaa;
   display: flex;
   align-items: flex-start;
   line-height: 1.5;
@@ -910,7 +888,7 @@ body {
 
 .job-responsibilities li::before {
   content: '•';
-  color: #06b6d4;
+  color: #ffffff;
   margin-right: 0.75rem;
   margin-top: 0.125rem;
 }
@@ -918,9 +896,9 @@ body {
 .education-entry {
   margin-bottom: 1.5rem;
   padding: 1rem;
-  background-color: rgba(30, 41, 59, 0.5);
+  background-color: #1a1a1a;
   border-radius: 0.75rem;
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  border: 1px solid #333333;
 }
 
 .education-header {
@@ -933,27 +911,26 @@ body {
 }
 
 .degree-title {
-  color: #67e8f9;
+  color: #ffffff;
   font-size: 1.125rem;
   font-weight: 600;
 }
 
 .school-name {
-  color: #06b6d4;
+  color: #cccccc;
   font-size: 1rem;
 }
 
 .education-period {
-  color: #9ca3af;
+  color: #000000;
   font-size: 0.875rem;
-  background-color: rgba(6, 182, 212, 0.2);
+  background-color: #ffffff;
   padding: 0.25rem 0.75rem;
   border-radius: 9999px;
-  border: 1px solid rgba(6, 182, 212, 0.3);
 }
 
 .education-details {
-  color: #9ca3af;
+  color: #aaaaaa;
   font-size: 0.875rem;
   line-height: 1.4;
 }
@@ -973,12 +950,12 @@ body {
 .certification-item {
   display: flex;
   align-items: center;
-  color: #9ca3af;
+  color: #aaaaaa;
   font-size: 0.875rem;
 }
 
 .cert-bullet {
-  color: #06b6d4;
+  color: #ffffff;
   margin-right: 0.75rem;
   font-weight: bold;
 }
@@ -989,6 +966,7 @@ body {
   min-height: calc(50vh - 2rem);
   display: flex;
   align-items: center;
+  background-color: #000000;
 }
 
 .contact-content {
@@ -998,7 +976,7 @@ body {
 }
 
 .contact-description {
-  color: #d1d5db;
+  color: #cccccc;
   font-size: 1.125rem;
   margin-bottom: 3rem;
 }
@@ -1010,10 +988,10 @@ body {
 }
 
 .social-icon {
-  background-color: #1e293b;
+  background-color: #ffffff;
   padding: 1rem;
   border-radius: 9999px;
-  color: #d1d5db;
+  color: #000000;
   transition: all 0.2s;
   display: flex;
   align-items: center;
@@ -1021,14 +999,14 @@ body {
 }
 
 .social-icon:hover {
-  background-color: #0891b2;
+  background-color: #cccccc;
   transform: translateY(-2px);
 }
 
 /* Footer */
 .footer {
-  background-color: rgba(15, 23, 42, 0.9);
-  border-top: 1px solid rgba(6, 182, 212, 0.3);
+  background-color: #000000;
+  border-top: 1px solid #333333;
   padding: 2rem;
 }
 
@@ -1036,6 +1014,6 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   text-align: center;
-  color: #9ca3af;
+  color: #888888;
 }
 

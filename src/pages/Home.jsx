@@ -7,13 +7,12 @@ export default function Home() {
       {/* Hero Section */}
       <section className="hero-section">
         <div className="hero-content">
-          <h1 className="hero-title">Your Name</h1>
+          <h1 className="hero-title">Hi! I'm Divik</h1>
           <p className="hero-subtitle">
-            Full Stack Developer | Creative Problem Solver
+            Software Engineer | UCLA School of Engineering
           </p>
           <p className="hero-description">
-            Passionate about building beautiful, functional web applications that make a difference.
-            Specializing in modern JavaScript frameworks and cloud technologies.
+            Passionate about everything from creating beautiful client side and server side applications, to building high performance computer systems
           </p>
           <div className="hero-buttons">
             <Link to="/about" className="btn-primary">
@@ -35,7 +34,7 @@ export default function Home() {
           </p>
           <div className="social-links">
             <a
-              href="https://github.com"
+              href="https://github.com/DivikChotani"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -43,7 +42,7 @@ export default function Home() {
               <GithubIcon size={24} />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/divik-chotani-8b3585242/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon"
@@ -51,7 +50,7 @@ export default function Home() {
               <LinkedinIcon size={24} />
             </a>
             <a
-              href="mailto:your.email@example.com"
+              href="mailto:divik.chotani@gmail.com"
               className="social-icon"
             >
               <Mail size={24} />

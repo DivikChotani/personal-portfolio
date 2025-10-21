@@ -16,72 +16,32 @@ export default function About() {
           <div className="about-grid">
             <div className="about-text-content">
               <p className="about-text">
-                I'm a passionate developer with a keen eye for design and a love for creating seamless user experiences. 
-                With several years of experience in web development, I've worked on projects ranging from small business 
-                websites to large-scale enterprise applications.
+                I'm a third year computer science student at UCLA, and I'm really interested in all aspects of software engineering!
+                My experience in web development compes from my past internships and personal projects. I've also worked on improving 
+                runtime speed for code recently through lower level projects.
               </p>
               <p className="about-text">
-                My journey in technology started with curiosity about how websites work, which led me to dive deep into 
-                both frontend and backend development. I believe in writing clean, maintainable code and staying up-to-date 
-                with the latest industry trends and best practices.
+                I'm currently a research assistant at UCLA's programmable software systems lab. I have previously worked for two
+                companies, Pixii and Validia, where I gained experience in web development and integrating AI
+                into user facing products.
               </p>
               <p className="about-text">
-                When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                or enjoying a good cup of coffee while reading about the latest trends in tech. I'm also passionate about 
-                mentoring junior developers and sharing knowledge with the community.
+                When I'm not coding, you can find me playing soccer or working out at the gym. I also enjoy learning about and experimenting with emerging tech tools and frameworks. 
+                
               </p>
             </div>
             <div className="about-image">
               <div className="placeholder-image">
-                <span>Your Photo Here</span>
+                <span><img src="public/picofme.jpeg"></img></span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Skills Section */}
-      <section className="skills-section">
-        <div className="skills-content">
-          <h2 className="section-title">Skills & Technologies</h2>
-          <div className="skills-grid">
-            {skills.map((skillGroup, idx) => (
-              <div key={idx} className="skill-card">
-                <h3 className="skill-category">{skillGroup.category}</h3>
-                <ul className="skill-list">
-                  {skillGroup.items.map((skill, i) => (
-                    <li key={i} className="skill-item">
-                      <span className="skill-bullet"></span>
-                      {skill}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
-      {/* Personal Interests */}
-      <section className="interests-section">
-        <div className="section-content">
-          <h2 className="section-title">Beyond Code</h2>
-          <div className="interests-grid">
-            <div className="interest-item">
-              <h3>Open Source</h3>
-              <p>Contributing to projects that make a difference in the developer community.</p>
-            </div>
-            <div className="interest-item">
-              <h3>Learning</h3>
-              <p>Always exploring new technologies and frameworks to stay current.</p>
-            </div>
-            <div className="interest-item">
-              <h3>Mentoring</h3>
-              <p>Helping junior developers grow and succeed in their careers.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+      
     </>
   );
 }
