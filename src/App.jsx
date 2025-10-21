@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// App.jsx
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Layout from './components/Layout';
 import Home from './pages/Home';
@@ -10,15 +11,16 @@ import './portfolio.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="portfolio-container">
         <Navbar />
         <Layout>
           <Routes>
-            <Route path="/personal-portfolio" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/resume" element={<Resume />} />
+            <Route path="/" element={<Home />} />
+            <Route path="about" element={<About />} />
+            <Route path="experience" element={<Experience />} />
+            <Route path="resume" element={<Resume />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Layout>
       </div>
