@@ -1,4 +1,5 @@
 import React from 'react';
+import { ASSETS } from '../config/assets';
 
 export default function About() {
   const skills = [
@@ -32,7 +33,7 @@ export default function About() {
             </div>
             <div className="about-image">
               <div className="placeholder-image">
-                <span><img src={`${import.meta.env.BASE_URL}picofme.jpeg`} alt="Profile" /></span>
+                <span><img src={ASSETS.profileImage} alt="Profile" /></span>
               </div>
             </div>
           </div>
