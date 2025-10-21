@@ -1,0 +1,27 @@
+/* Full-bleed app frame */
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+#root {
+  /* remove Vite starter constraints */
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  text-align: initial;
+}
+
+/* If you keep a fixed 4rem navbar, let pages fill the remaining viewport */
+.main-content {
+  min-height: calc(100dvh - 4rem); /* dvh handles mobile address bars better */
+  width: 100%;
+}
+
+/* Make the hero itself fill the viewport under the navbar */
+.hero-section {
+  min-height: calc(100dvh - 4rem);
+  display: flex;
+  align-items: center;
+  padding: 4rem 2rem 2rem; /* your existing paddings are fine */
+}
