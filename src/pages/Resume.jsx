@@ -2,14 +2,15 @@ import { Download } from 'lucide-react';
 
 export default function Resume() {
   const handleDownload = () => {
-    // Create a link element and trigger download
-    const link = document.createElement('a');
-    link.href = `${import.meta.env.BASE_URL}resume.pdf`;
-    link.download = 'Divik_Chotani_Resume.pdf';
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  const url = new URL('resume.pdf', window.location.origin + import.meta.env.BASE_URL).toString();
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'Divik_Chotani_Resume.pdf';
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+};
+
 
 
 
