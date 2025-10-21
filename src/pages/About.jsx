@@ -17,7 +17,7 @@ export default function About() {
             <div className="about-text-content">
               <p className="about-text">
                 I'm a third year computer science student at UCLA, and I'm really interested in all aspects of software engineering!
-                My experience in web development compes from my past internships and personal projects. I've also worked on improving 
+                My experience in web development compes from my past internships and personal projects. I've also worked on improving
                 runtime speed for code recently through lower level projects.
               </p>
               <p className="about-text">
@@ -26,22 +26,22 @@ export default function About() {
                 into user facing products.
               </p>
               <p className="about-text">
-                When I'm not coding, you can find me playing soccer or working out at the gym. I also enjoy learning about and experimenting with emerging tech tools and frameworks. 
-                
+                When I'm not coding, you can find me playing soccer or working out at the gym. I also enjoy learning about and experimenting with emerging tech tools and frameworks.
+
               </p>
             </div>
             <div className="about-image">
               <div className="placeholder-image">
-                <span><img src="/personal-portfolio/picofme.jpeg"></img></span>
+                <span><img src={`${import.meta.env.BASE_URL}picofme.jpeg`} alt="Profile" /></span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      
 
-      
+
+
     </>
   );
 }
