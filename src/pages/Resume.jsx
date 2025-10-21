@@ -1,12 +1,11 @@
 import { Download } from 'lucide-react';
-import { ASSETS, getAssetPath } from '../config/assets';
 
 export default function Resume() {
   const handleDownload = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = getAssetPath(ASSETS.resume);
-    link.download = 'Divik_Chotani_Resume.pdf'; // Name for the downloaded file
+    link.href = `${import.meta.env.BASE_URL}resume.pdf`;
+    link.download = 'Divik_Chotani_Resume.pdf';
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
