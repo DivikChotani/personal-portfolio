@@ -2,7 +2,7 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [ main ]   # or "master"
+    branches: [ main ]
   workflow_dispatch:
 
 permissions:
@@ -19,14 +19,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
       - uses: actions/setup-node@v4
         with:
-          node-version: 22   # matches your local (22+ recommended for Vite 7)
-          cache: 'npm'
+          node-version: 22
+          cache: npm
+
       - run: npm ci
+
+      # Configure Pages (required for actions/deploy-pages)
+      - uses: actions/configure-pages@v5
+
       - run: npm run build
-      # Optional SPA fallback for client-side routing:
+
+      # SPA fallback (for client-side routing)
       - run: cp dist/index.html dist/404.html
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
