@@ -32,7 +32,7 @@ export default function About() {
             </div>
             <div className="about-image">
               <div className="placeholder-image">
-                <span><img src="public/picofme.jpeg"></img></span>
+                <span><img src="/personal-portfolio/picofme.jpeg"></img></span>
               </div>
             </div>
           </div>

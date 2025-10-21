@@ -1,25 +1,17 @@
-import React from 'react';
-import { Download, Mail, Phone, MapPin, Globe, LucideGithub, Linkedin } from 'lucide-react';
+import { Download } from 'lucide-react';
 
 export default function Resume() {
   const handleDownload = () => {
     // Create a link element and trigger download
     const link = document.createElement('a');
-    link.href = '/resume.pdf'; // Path to your PDF in the public folder
+    link.href = '/personal-portfolio/resume.pdf'; // Path to your PDF with base path
     link.download = 'Divik_Chotani_Resume.pdf'; // Name for the downloaded file
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  const education = [
-    {
-      degree: "Bachelor of Science in Computer Science",
-      school: "University of California, Los Angeles",
-      period: "2023 - 2027",
-      details: "Relevant Coursework: Data Structures, Algorithms, Web Development, Database Systems"
-    },
-  ];
+
 
   const technicalSkills = {
     "Programming Languages": ["Python, Rust, C#, Java, C++, Go, SQL, JavaScript, HTML/CSS, C, JSON"],
